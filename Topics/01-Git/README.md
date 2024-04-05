@@ -38,7 +38,7 @@ Every time i add a new lab or exercise, i will commit the changes, add a message
 
 You can see all the commits i've made, what i added and what i've deleted. The entire history of this project! Feel free to:
 - [open issues](https://github.com/arieluchka/DevOps-Projects-and-Exercises/issues), if you think there is a bug in the labs/you have a suggestion to improve something.
-- [look through the history of this repo](https://github.com/arieluchka/DevOps-Projects-and-Exercises/commit/) and see what changed between commits (try to find the commit of this readme file!).
+- [look through the history of this repo](https://github.com/arieluchka/DevOps-Projects-and-Exercises/commits/main/) and see what changed between commits (try to find the commit of this readme file!).
 - [create a pull request](https://github.com/arieluchka/DevOps-Projects-and-Exercises/pulls) if you want to add your code to the repository.
 
 
