@@ -207,6 +207,15 @@ You used docker to create a real **local DNS server**!
 
 If you had problems setting everything up, and **used hints** and **dockerhub**, try to do it again but with the second app, but now, without using hints!
 
+**To block ads**, you need to add a block list (a file with list of domains that are used for ads.
+[How to add a block list in pihole](https://youtu.be/2PtLo7U_iXU?si=W3Gus6kqzTDGx7e7&t=70)
+
+2 block lists that im using are:
+1) https://big.oisd.nl/
+2) https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+[How to block ads on adguard](https://youtu.be/B2V_8M9cjYw?si=ubBUQJ6-R77sZotC&t=403)
+
 
 ### IMPORTANT
 The ad block will function as long as the container is up! If it's stopped/deleted, devices that use the container as a DNS server, **Wont have internet!**
