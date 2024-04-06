@@ -11,7 +11,7 @@ When we visit sites that have ads, they (the ads) are usually hosted on other co
 
 If we go to [ynet.com](https://www.ynet.co.il/) for example (make sure your ad blocker is turned off, if you have any), we can see that if we inspect this ad, it actually coming from another URL:
 
-![alt text](image.png)
+![alt text](./pics/image.png)
 
 To see this ad, our computer had to translate this Domain to an IP, so it can connect to the Server hosting this ad and download it.
 
@@ -21,11 +21,11 @@ But... what if we didnt translate the domain of **tpc.googlesyndication.com** to
 
 Using docker and containers, this exercise will help you create your own local DNS server that will take your web browsing from this:
 
-![alt text](ynet-before.png)
+![alt text](./pics/ynet-before.png)
 
 To this:
 
-![alt text](ynet-after.png)
+![alt text](./pics/ynet-after.png)
 
 And the best part? Creating a local DNS server will block ads to **EVREY** device on the network, whether its your laptop, your moms phone, the family ipad or the smart TV. (It **wont** block YouTube ads thought)
 
@@ -122,7 +122,7 @@ Try to figure out the correct commands **without** looking at dockerhub. This Wi
 
     To get the password, run `docker logs <pihole container name>` and it should showup there somewhere
 
-    ![alt text](pihole-password.png)
+    ![alt text](./pics/pihole-password.png)
   
     </details>
 
@@ -164,7 +164,9 @@ Try to figure out the correct commands **without** looking at dockerhub. This Wi
     Saves their files on 
     `/opt/adguardhome/work` and `/opt/adguardhome/conf` 
 
-    Delete the container, and try to run it again with [attached volumes](https://docs.docker.com/storage/volumes/#choose-the--v-or---mount-flag). Make sure you can enter the setup site. Try to change some settings/configure some stuff on the admin panel.
+    Delete the container, and **try to run it again with** [**attached volumes**](https://docs.docker.com/storage/volumes/#choose-the--v-or---mount-flag).
+    
+     Make sure you can enter the setup site. Try to change some settings/configure some stuff on the admin panel.
 
     To check if you attached the volumes correctly, you can try to delete the container again, and re-run it. Once it's up, if all of your settings are intact, then you did a great job!
 
@@ -176,3 +178,39 @@ Try to figure out the correct commands **without** looking at dockerhub. This Wi
     AdGuard `docker run --rm -d -p 53:53/tcp -p 53:53/udp -p 3000:3000 -p 80:80 -v 'C:/path/to/folder1:/opt/adguardhome/work' -v 'C:/path/to/folder2:/opt/adguardhome/conf' adguard/adguardhome`
 
     </details>
+---
+6) You have your first local DNS server! hooray!
+
+    To use it, you need to configure your computer to use the container, when it searches for an IP address.
+
+    Find the IP address of your host machine (you can use `ipconfig` on windows) and [change the Primary DNS server](https://www.youtube.com/watch?v=e6mL6_FCbeo) of your machine, to it's own IP! (dont add a secondery DNS)
+
+    Now, When your computer searches for a site, it **wont** go to the ISP DNS server, but to the DNS server **you** created. 
+
+---
+
+<details>
+<summary>BONUS</summary>
+
+If you want all the devices on the network to use this DNS server, you need to set your router to use the container as the DNS server (in the routers DHCP settings).
+
+On tp-link routers, it will look like this (my containers IP is 192.168.1.15, yours my vary)
+
+![alt text](./pics/tp-link-dns.png)
+
+</details>
+
+---
+### Final Notes
+
+You used docker to create a real **local DNS server**!
+
+If you had problems setting everything up, and **used hints** and **dockerhub**, try to do it again but with the second app, but now, without using hints!
+
+
+### IMPORTANT
+The ad block will function as long as the container is up! If it's stopped/deleted, devices that use the container as a DNS server, **Wont have internet!**
+
+**Use in your own risk!**
+
+Its recommended to set the DNS server on an old laptop/[raspberry pi](https://www.raspberrypi.com/), and keep it running 24/7!
