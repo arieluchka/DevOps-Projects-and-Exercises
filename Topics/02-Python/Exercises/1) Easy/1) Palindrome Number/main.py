@@ -2,7 +2,7 @@ from auto_test import *
 
 class Solution(object):
 # ------------------------Your Solution in here-----------------------------------------------
-
+    def ispalindrome(self, num):
 
 
 
