@@ -1,4 +1,4 @@
-## Palindrome Number
+## Two Sum
 Given an array of integers `nums` and an integer `target`, return a list of two integers, that represent the index of the nums that add up to the `target`.
 
 Write your code in the "twoSum" function. The function should return **a list of the two indexes of the list `nums`** 
