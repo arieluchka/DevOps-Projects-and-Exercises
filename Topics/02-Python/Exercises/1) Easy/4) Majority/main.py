@@ -7,8 +7,6 @@ class Solution(object):
 
 
 
-    
-
 
 # --------------------------------------------------------------------------------------------
 #                   The function should return a boolean (True/False)
