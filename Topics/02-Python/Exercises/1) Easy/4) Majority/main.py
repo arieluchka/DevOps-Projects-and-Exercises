@@ -9,7 +9,7 @@ class Solution(object):
 
 
 # --------------------------------------------------------------------------------------------
-#                   The function should return a boolean (True/False)
+#                   The function should return an int
 
 
 def solution_testings():
