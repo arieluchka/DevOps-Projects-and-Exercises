@@ -16,3 +16,17 @@ Right now there are:
 
 
 **If you have suggestions/feedback, feel free to leave it in [this google forms](https://docs.google.com/forms/d/e/1FAIpQLSeIoyepVabG6hK64ybaCviuT7oifhd7hggANvCxRP20MxartA/viewform) (can be anonymus)!**
+
+## How to learn?
+
+
+
+
+## Links
+
+- [A DevOps Roadmap](https://roadmap.sh/devops)
+  
+**Free courses and learning material**
+- [Free Udemy Courses(free-course-site)](https://freecoursesite.com/)
+- [Free Courses(course-club)](https://courseclub.me/?1)
+- [Free Courses (giga-course)](https://gigacourse.com/?1)
