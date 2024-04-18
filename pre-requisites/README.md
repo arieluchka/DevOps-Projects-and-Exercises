@@ -77,3 +77,6 @@ If you see `docker-desktop` as the node, then everything is good :)
 4) If you get lots of errors, try the command `kubectl config get-contexts` to see what contexts you have ([what is k8s context](https://aptakube.com/blog/complete-guide-to-kubeconfig-kubernetes-contexts)).
 5) To switch to the `docker desktop` context, enter the command `kubectl config use-context docker-desktop`. 
 6) Now try again to get all the nodes!
+
+## How to create Dockerhub account
+[follow this guide](https://dockerlabs.collabnix.com/workshop/docker/dockerhub)
