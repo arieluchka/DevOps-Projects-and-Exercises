@@ -14,6 +14,10 @@ The whole point of this exercise is to practice researching and how to handle un
 
 ---
 
+Build and test your images and see how every change you do to the Dockerfile affects the build.
+
+---
+
 ### HINTS
 You can use the Hints below for basic guidelines and steps you need to take.
 **Start with the small hints, just to get some directions.**
