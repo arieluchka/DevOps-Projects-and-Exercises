@@ -4,7 +4,9 @@ This git repository will slowly fill up with labs, exercises and project ideas r
 
 Right now there are:
 - [Python exercises](https://github.com/arieluchka/DevOps-Projects-and-Exercises/tree/main/Topics/02-Python/Exercises)
-- [a Docker exercise](https://github.com/arieluchka/DevOps-Projects-and-Exercises/tree/main/Topics/08-Docker/Exercises)
+- [a Docker mini-project](https://github.com/arieluchka/DevOps-Projects-and-Exercises/tree/main/Topics/08-Docker/mini-projects/self%20hosted%20DNS)
+- [2 Docker Containerize-By-Demand exercises](https://github.com/arieluchka/DevOps-Projects-and-Exercises/tree/main/Topics/08-Docker/Exercises/Containerize-By-Demand)
+- Cloud Architecture exercise
 - [git learning material](https://github.com/arieluchka/DevOps-Projects-and-Exercises/tree/main/Topics/01-Git)
 
 **Whats planned?**
