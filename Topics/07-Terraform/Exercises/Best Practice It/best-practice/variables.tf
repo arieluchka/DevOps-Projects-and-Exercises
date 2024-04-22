@@ -1,0 +1,1 @@
+# here you can add variables to be used in the main file

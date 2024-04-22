@@ -1,0 +1,35 @@
+User
+i want to create a terraform exercise to practice the right way to write a tf file.
+we will provide the students with a tf file that deploys some resources to azure. the file wont follow terraform best practices.
+meaning, for example, when wee have a vnet that is assigned to a resource group, it wont use the tf resource block name, but the explicit resource group name.
+instead of:
+
+resource "azurerm_resource_group" "server_resource" {
+  name     = "rg1-example"
+  location = "eastus"
+}
+
+resource "azurerm_virtual_network" "server_vnet" {
+  name                = "vnet1"
+  address_space       = ["10.0.0.0/16"]
+  location            = azurerm_resource_group.server_resource.location
+  resource_group_name = azurerm_resource_group.server_resource.name
+}
+
+it will be:
+
+resource "azurerm_resource_group" "server_resource" {
+  name     = "rg1-example"
+  location = "eastus"
+}
+
+resource "azurerm_virtual_network" "server_vnet" {
+  name                = "vnet1"
+  address_space       = ["10.0.0.0/16"]
+  location            =  "eastus"
+  resource_group_name = "vnet1"
+}
+
+Your objective is to create a tf file with a bunch of cloud resources, but write it in a way that *does not* follow best practice.
+
+after the bad .tf file, write the variation that *does* follow best practice (referencing other resource blocks/using variables.tf file and so on)  
