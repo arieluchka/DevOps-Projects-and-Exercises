@@ -54,6 +54,12 @@ do all the steps through incognito mode!!
 
 ![alt text](./pics/activating-azure/redeem-key2.png)
 
+4) view and agree to the license agreement:
+
+![alt text](./pics/activating-azure/license.png)
+
+
+
 **TO CONTINUE**
 
 ## How to activate Kubernetes from Docker-For-Desktop
@@ -80,3 +86,11 @@ If you see `docker-desktop` as the node, then everything is good :)
 
 ## How to create Dockerhub account
 [follow this guide](https://dockerlabs.collabnix.com/workshop/docker/dockerhub)
+
+## Install Azure CLI
+
+\<To be added>
+
+## Install Terraform CLI
+
+\<To be added>
